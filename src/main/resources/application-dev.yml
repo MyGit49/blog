@@ -4,3 +4,10 @@ spring:
     data-username: usernamea
     data-password: password
     driver-class-name: com.mysql.jdbc.Driver
+
+  jpa:
+    database: MYSQL
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
