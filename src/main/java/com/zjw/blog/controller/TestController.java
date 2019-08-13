@@ -30,4 +30,15 @@ public class TestController {
         User user = userService.findByUserAccount("wangyh");
         return user.getUserName();
     }
+
+    @PostMapping("/s")
+    public String s(@RequestBody User user){
+        try {
+            userService.updateUser(user);
+            return "success";
+        } catch (Exception e) {
+            e.printStackTrace();
+            return "error";
+        }
+    }
 }

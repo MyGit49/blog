@@ -9,5 +9,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
  * @date
  */
 public interface UserRepository extends JpaRepository<User,Integer> {
-    public User findByUserAccount(String userAccount);
+    User findUserByUserAccount(String userAccount);
+    User findUserById(Integer id);
 }
