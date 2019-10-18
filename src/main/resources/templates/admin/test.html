@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="/ueditor/ueditor.config.js"></script>
+    <script src="/ueditor/ueditor.all.min.js"></script>
+    <script src="/ueditor/lang/zh-cn/zh-cn.js"></script>
+    <script src="/wangeditor/wangEditor.js"></script>
+    <style type="text/css">
+        .toolbar {
+            border: 1px solid #ccc;
+        }
+        .text {
+            border: 1px solid #ccc;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+<!--<textarea name="content" id="content"></textarea>
+<div id="editor">
+    //此处创建富文本区域
+</div>-->
+<div style="width: 60%">
+    <div id="editor" style="height: 600px">
+        //此处创建富文本区域
+    </div>
+</div>
+</body>
+<script type="text/javascript">
+    /*UE.getEditor('content');*/
+    var E = window.wangEditor;
+    var editor = new E('#editor');
+    editor.create();
+</script>
+</html>
