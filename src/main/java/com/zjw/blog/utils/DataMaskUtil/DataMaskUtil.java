@@ -1,4 +1,4 @@
-package com.zjw.utils.DataMaskUtil;
+package com.zjw.blog.utils.DataMaskUtil;
 
 
 import org.thymeleaf.util.StringUtils;

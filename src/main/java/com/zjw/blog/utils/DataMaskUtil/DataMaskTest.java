@@ -1,4 +1,4 @@
-package com.zjw.utils.DataMaskUtil;
+package com.zjw.blog.utils.DataMaskUtil;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,8 +15,8 @@ public class DataMaskTest {
         String name = "张计委";
         String phoneNum = "18712793601";
         String IdCard = "13098119970511601X";
-        logger.info(DataMaskUtil.maskName(name));
-        logger.info(DataMaskUtil.maskPhoneNum(phoneNum));
-        logger.info(DataMaskUtil.maskIdCard(IdCard));
+        logger.info("姓名[{}]",DataMaskUtil.maskName(name));
+        logger.info("手机号[{}]",DataMaskUtil.maskPhoneNum(phoneNum));
+        logger.info("身份证号[{}]",DataMaskUtil.maskIdCard(IdCard));
     }
 }

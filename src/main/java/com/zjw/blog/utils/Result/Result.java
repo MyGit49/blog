@@ -1,4 +1,4 @@
-package com.zjw.utils.Result;
+package com.zjw.blog.utils.Result;
 
 /**
  * @Created by 张计委

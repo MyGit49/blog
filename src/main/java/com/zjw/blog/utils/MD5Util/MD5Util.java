@@ -1,4 +1,4 @@
-package com.zjw.utils.MD5Util;
+package com.zjw.blog.utils.MD5Util;
 
 import java.security.MessageDigest;
 

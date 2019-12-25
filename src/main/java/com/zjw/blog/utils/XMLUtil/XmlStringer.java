@@ -1,4 +1,4 @@
-package com.zjw.utils.XMLUtil;
+package com.zjw.blog.utils.XMLUtil;
 
 /**
  * @auther 张计委
