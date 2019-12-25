@@ -62,7 +62,7 @@
             <groupId>org.thymeleaf.extras</groupId>
             <artifactId>thymeleaf-extras-java8time</artifactId>
         </dependency>
-        <!--swagger-->
+        <!--swagger start-->
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger2</artifactId>
@@ -73,20 +73,23 @@
             <artifactId>springfox-swagger-ui</artifactId>
             <version>${swagger.version}</version>
         </dependency>
+        <!--swagger end-->
+
+        <!--excel start-->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>3.17</version>
+        </dependency>
+        <!--excel end-->
+
+        <!--    pdf相关start    -->
         <!--iText-->
         <dependency>
             <groupId>com.itextpdf</groupId>
             <artifactId>itextpdf</artifactId>
             <version>5.0.6</version>
         </dependency>
-         <!--excel-->
-        <dependency>
-            <groupId>org.apache.poi</groupId>
-            <artifactId>poi</artifactId>
-            <version>3.17</version>
-        </dependency>
-        <!--    pdf相关    -->
-
         <!-- freemarker依赖 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -99,6 +102,7 @@
             <artifactId>flying-saucer-pdf</artifactId>
             <version>9.1.12</version>
         </dependency>
+        <!--    pdf相关end    -->
     </dependencies>
 
     <build>

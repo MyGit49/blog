@@ -21,7 +21,7 @@ public class TestController {
     @Autowired
     UserService userService;
 
-    @GetMapping("/test")
+    @GetMapping("/test1")
     public List<User> test(){
         List<User> userList = userRepository.findAll();
         System.out.println(userList.size());
@@ -29,13 +29,13 @@ public class TestController {
         return userList;
     }
 
-    @GetMapping("/t")
+    @GetMapping("/test2")
     public String t(){
         User user = userService.findByUserAccount("wangyh");
         return user.getUserName();
     }
 
-    @PostMapping("/s")
+    @PostMapping("/test3")
     public String s(@RequestBody User user){
         try {
             userService.updateUser(user);
